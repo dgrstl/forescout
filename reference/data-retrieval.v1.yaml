@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: Data Retrieval
+  version: '1.0'
+  contact:
+    name: foo
+  description: foo
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /api/hostFields:
+    get:
+      summary: Get host fields
+      tags:
+        - Data
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ../models/hostfields.v1.yaml
+      operationId: get-api-hostFields
+      description: ''
+    post:
+      summary: Create host fields
+      tags:
+        - Data
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ../models/hostfields.v1.yaml
+      operationId: post-api-hostFields
+components:
+  schemas: {}
