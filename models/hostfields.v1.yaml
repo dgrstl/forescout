@@ -1,0 +1,26 @@
+title: hostFields
+type: object
+description: ''
+properties:
+  hostFields:
+    type: array
+    items:
+      type: object
+      properties:
+        label:
+          type: string
+          enum:
+            - s1
+            - s23
+        description:
+          type: string
+        name:
+          type: string
+        type:
+          type:
+            - string
+            - boolean
+        '':
+          type: string
+required:
+  - hostFields
