@@ -1,0 +1,16 @@
+title: hostFields
+type: object
+properties:
+  hostfields:
+    type: array
+    items:
+      type: object
+      properties:
+        label:
+          type: string
+        description:
+          type: string
+        name:
+          type: string
+        type:
+          type: boolean
